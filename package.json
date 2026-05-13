@@ -1,0 +1,49 @@
+
+{
+  "name": "codecast",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "supabase gen types typescript --local > src/types/database.ts",
+    "db:migrate": "supabase db push",
+    "db:reset": "supabase db reset"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "@supabase/ssr": "^0.5.0",
+    "openai": "^4.70.0",
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@specfy/stack-analyser": "^1.5.0",
+    "bullmq": "^5.20.0",
+    "ioredis": "^5.4.0",
+    "framer-motion": "^11.10.0",
+    "d3": "^7.9.0",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.5.0",
+    "zod": "^3.23.0",
+    "stripe": "^17.0.0",
+    "lucide-react": "^0.450.0",
+    "sonner": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/d3": "^7.4.0",
+    "@types/node": "^22.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.1.0",
+    "supabase": "^1.200.0"
+  }
+}
+
